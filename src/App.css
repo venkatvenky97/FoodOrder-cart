@@ -1,38 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;700&display=swap");
+:root {
+  --bg-color: rgb(233, 109, 46);
+}
 .App {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.food-item-image {
+  border-radius: 14%;
+  width: 200px;
+  height: 175px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.food-item-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.site-bg-primary {
+  background-color: var(--bg-color) !important;
+  border-color: var(--bg-color) !important;
+}
+
+.item-image {
+  border-radius: 5%;
+}
+
+a {
+  color: white !important;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
+.cart-text {
+  position: relative;
+  bottom: 2px;
+  font-weight: 600;
+}
+
+.site-title {
+  position: relative;
+  top: 3px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.carousel-item {
+  background: rgb(246, 223, 144);
+  color: black;
+  font-size: 36px;
+  line-height: 100px;
+  position: relative;
+  text-align: center;
+  border-radius: 13px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.carousel-container {
+  width: 90vw;
+}
+
+.title-container {
+  width: 70%;
+}
+
+.title-text {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-secondary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .item-desc {
+    max-width: 110px;
   }
-  to {
-    transform: rotate(360deg);
+  .item-image {
+    width: 150px;
   }
 }
